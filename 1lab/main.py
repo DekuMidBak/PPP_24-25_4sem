@@ -17,7 +17,7 @@ def get_process_info():
 
 
 def save_process_info():
-    """Сохраняет информацию о процессах в файл JSON."""
+    """Сохраняет информацию о процессах в файл формата JSON."""
     data = get_process_info()
     timestamp = datetime.now().strftime("%d-%m-%Y_%H-%M-%S")
     filename = f"processes_{timestamp}.json"
