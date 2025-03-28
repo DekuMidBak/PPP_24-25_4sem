@@ -1,7 +1,9 @@
+# client.py
 import socket
 import json
 
 
+# asdasdasdasdasdasd
 def start_client():
     """Запускает клиент и позволяет взаимодействовать с сервером."""
     client = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
