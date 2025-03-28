@@ -5,6 +5,7 @@ import json
 from datetime import datetime
 
 
+# aaa
 def get_process_info():
     """Собирает информацию о запущенных процессах и форматирует в список."""
     process_list = []
