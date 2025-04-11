@@ -1,8 +1,9 @@
+from fastapi import FastAPI
+from app.api import auth, search
+from app.db.database import Base, engine
 
-def main():
-    # Ваш код здесь
-    pass
+Base.metadata.create_all(bind=engine)
 
-if __name__ == "__main__":
-    main()
-
+app = FastAPI()
+app.include_router(auth.router)
+app.include_router(search.router)

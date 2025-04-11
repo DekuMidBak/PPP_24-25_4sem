@@ -16,7 +16,7 @@ def start_client():
         if command == "exit":
             break
         client.sendall(command.encode())
-        response = client.recv(65536).decode()
+        response = client.recv(1024).decode()
 
         try:
             response_data = json.loads(response)
